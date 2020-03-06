@@ -6,36 +6,48 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
       integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Document</title>
+
+    <title>APP METEO</title>
   </head>
   <body>
     <script src="assets/script.js" async></script>
-    <header></header>
+    <header>
+      <nav class="ui big menu">
+        <div class="ui container">
+          <h1 class="header item">
+            <img src="352.png" alt="" class="ui img" />
+          </h1>
+          <h1 class="header item">
+            La Meteo des cracks
+          </h1>
+          <a class="item"> Accueil</a>
+        </div>
+      </nav>
+    </header>
     <main>
-      <form class="ui form">
-        <div class="field">
-          <label>First Name</label>
-          <input type="text" name="first-name" placeholder="First Name">
-        </div>
-        <div class="field">
-          <label>Last Name</label>
-          <input type="text" name="last-name" placeholder="Last Name">
-        </div>
-        <div class="field">
-          <div class="ui checkbox">
-            <input type="checkbox" tabindex="0" class="hidden">
-            <label>I agree to the Terms and Conditions</label>
+      <div class="ui container">
+        <form class="ui form">
+          <div class="inline fields">
+            <div class="eight wide field">
+              <label>Ville</label>
+              <input type="text" placeholder="Entrez votre ville" id="inputVilleDep"/>
+            </div>
+            <div class="eight wide field">
+              <label>Pays</label>
+              <input type="text" placeholder="Entrez votre Pays" id="inputPays"/>
+            </div>
+            <button class="ui button" type="submit"><i class="search icon"></i></button>
           </div>
-        </div>
-        <button class="ui button" type="submit">Submit</button>
-      </form>
+        </form>
+      </div>
+      <p style="margin-top: 5%;"></p>
     </main>
     <footer></footer>
   </body>

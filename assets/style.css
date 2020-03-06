@@ -1,3 +1,13 @@
 img {
-    height: 100px;
+  height: 100px;
+}
+
+.ui.form {
+  margin-top: 5%;
+}
+
+p {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 5%;
 }
